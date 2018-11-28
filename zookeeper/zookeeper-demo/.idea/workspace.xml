@@ -1,0 +1,1589 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="30dd48b4-b3ca-4c8f-8478-221a501189fe" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_20_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_3_7_0_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jline_jline_0_9_94.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_16.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_curator_curator_client_4_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_curator_curator_framework_4_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_curator_curator_recipes_4_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_3_4_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_6_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wanxian/zookeeper/ConnectionDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/gupaoedu/zookeeper/ConnnectedDemoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/wanxian/zookeeper/ConnectionDemo$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/wanxian/zookeeper/ConnectionDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/com/gupaoedu/zookeeper/ConnnectedDemoTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zookeeper-demo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/NOTICE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/README_packaging.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/bin/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/bin/zkCleanup.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/bin/zkCli.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/bin/zkCli.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/bin/zkEnv.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/bin/zkEnv.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/bin/zkServer-initialize.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/bin/zkServer.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/bin/zkServer.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/conf/configuration.xsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/conf/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/conf/zoo_sample.cfg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/bookkeeperConfig.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/bookkeeperConfig.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/bookkeeperOverview.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/bookkeeperOverview.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/bookkeeperProgrammer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/bookkeeperProgrammer.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/bookkeeperStarted.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/bookkeeperStarted.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/bookkeeperStream.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/bookkeeperStream.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/broken-links.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/images/2pc.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/images/bk-overview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/images/built-with-forrest-button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/images/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/images/hadoop-logo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/images/instruction_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/images/state_dia.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/images/zkcomponents.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/images/zknamespace.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/images/zkperfRW-3.2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/images/zkperfRW.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/images/zkperfreliability.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/images/zkservice.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/images/zookeeper_small.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/index.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/javaExample.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/javaExample.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/linkmap.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/linkmap.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/recipes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/recipes.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/releasenotes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/releasenotes.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/skin/CommonMessages_de.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/skin/CommonMessages_en_US.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/skin/CommonMessages_es.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/skin/CommonMessages_fr.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/skin/basic.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/skin/breadcrumbs-optimized.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/skin/breadcrumbs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/skin/fontsize.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/skin/getBlank.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/skin/getMenu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/skin/images/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/skin/images/add.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/skin/images/apache-thanks.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/skin/images/built-with-cocoon.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/skin/images/built-with-forrest-button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/skin/images/chapter.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/skin/images/chapter_open.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/skin/images/current.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/skin/images/error.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/skin/images/external-link.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/skin/images/fix.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/skin/images/forrest-credit-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/skin/images/hack.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/skin/images/header_white_line.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/skin/images/info.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/skin/images/instruction_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/skin/images/label.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/skin/images/page.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/skin/images/pdfdoc.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/skin/images/poddoc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/skin/images/printer.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/skin/images/rc-b-l-15-1body-2menu-3menu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/skin/images/rc-b-r-15-1body-2menu-3menu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/skin/images/rc-b-r-5-1header-2tab-selected-3tab-selected.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/skin/images/rc-t-l-5-1header-2searchbox-3searchbox.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/skin/images/rc-t-l-5-1header-2tab-selected-3tab-selected.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/skin/images/rc-t-l-5-1header-2tab-unselected-3tab-unselected.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/skin/images/rc-t-r-15-1body-2menu-3menu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/skin/images/rc-t-r-5-1header-2searchbox-3searchbox.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/skin/images/rc-t-r-5-1header-2tab-selected-3tab-selected.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/skin/images/rc-t-r-5-1header-2tab-unselected-3tab-unselected.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/skin/images/remove.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/skin/images/rss.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/skin/images/spacer.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/skin/images/success.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/skin/images/txtdoc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/skin/images/update.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/skin/images/valid-html401.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/skin/images/vcss.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/skin/images/warning.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/skin/images/xmldoc.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/skin/menu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/skin/note.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/skin/print.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/skin/profile.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/skin/prototype.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/skin/screen.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/zookeeperAdmin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/zookeeperAdmin.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/zookeeperHierarchicalQuorums.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/zookeeperHierarchicalQuorums.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/zookeeperInternals.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/zookeeperInternals.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/zookeeperJMX.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/zookeeperJMX.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/zookeeperObservers.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/zookeeperObservers.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/zookeeperOtherInfo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/zookeeperOtherInfo.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/zookeeperOver.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/zookeeperOver.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/zookeeperProgrammers.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/zookeeperProgrammers.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/zookeeperQuotas.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/zookeeperQuotas.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/zookeeperReconfig.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/zookeeperReconfig.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/zookeeperStarted.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/zookeeperStarted.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/zookeeperTutorial.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/docs/zookeeperTutorial.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/ivy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/ivysettings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/NOTICE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/c/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/c/ChangeLog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/c/INSTALL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/c/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/c/Makefile.am" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/c/NOTICE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/c/README" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/c/acinclude.m4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/c/aminclude.am" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/c/c-doc.Doxyfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/c/cmake_config.h.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/c/configure.ac" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/c/include/proto.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/c/include/recordio.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/c/include/winconfig.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/c/include/zookeeper.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/c/include/zookeeper_log.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/c/include/zookeeper_version.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/c/src/addrvec.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/c/src/addrvec.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/c/src/cli.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/c/src/hashtable/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/c/src/hashtable/hashtable.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/c/src/hashtable/hashtable.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/c/src/hashtable/hashtable_itr.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/c/src/hashtable/hashtable_itr.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/c/src/hashtable/hashtable_private.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/c/src/load_gen.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/c/src/mt_adaptor.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/c/src/recordio.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/c/src/st_adaptor.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/c/src/winport.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/c/src/winport.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/c/src/zk_adaptor.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/c/src/zk_hashtable.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/c/src/zk_hashtable.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/c/src/zk_log.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/c/src/zookeeper.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/c/tests/CollectionUtil.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/c/tests/CppAssertHelper.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/c/tests/LibCMocks.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/c/tests/LibCMocks.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/c/tests/LibCSymTable.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/c/tests/LibCSymTable.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/c/tests/MocksBase.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/c/tests/MocksBase.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/c/tests/PthreadMocks.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/c/tests/PthreadMocks.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/c/tests/TestClient.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/c/tests/TestClientRetry.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/c/tests/TestDriver.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/c/tests/TestMulti.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/c/tests/TestOperations.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/c/tests/TestReadOnlyClient.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/c/tests/TestReconfig.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/c/tests/TestReconfigServer.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/c/tests/TestWatchers.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/c/tests/TestZookeeperClose.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/c/tests/TestZookeeperInit.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/c/tests/ThreadingUtil.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/c/tests/ThreadingUtil.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/c/tests/Util.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/c/tests/Util.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/c/tests/Vector.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/c/tests/WatchUtil.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/c/tests/ZKMocks.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/c/tests/ZKMocks.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/c/tests/ZooKeeperQuorumServer.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/c/tests/ZooKeeperQuorumServer.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/c/tests/quorum.cfg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/c/tests/wrappers-mt.opt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/c/tests/wrappers.opt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/c/tests/zkServer.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/build-contrib.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/fatjar/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/fatjar/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/fatjar/conf/mainClasses" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/fatjar/src/java/org/apache/zookeeper/util/FatJarMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/huebrowser/README" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/huebrowser/zkui/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/huebrowser/zkui/setup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/huebrowser/zkui/src/zkui/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/huebrowser/zkui/src/zkui/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/huebrowser/zkui/src/zkui/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/huebrowser/zkui/src/zkui/rest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/huebrowser/zkui/src/zkui/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/huebrowser/zkui/src/zkui/static/art/line_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/huebrowser/zkui/src/zkui/static/art/zkui.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/huebrowser/zkui/src/zkui/static/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/huebrowser/zkui/src/zkui/static/css/zkui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/huebrowser/zkui/src/zkui/static/help/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/huebrowser/zkui/src/zkui/static/js/Source/Zkui/Zkui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/huebrowser/zkui/src/zkui/static/js/package.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/huebrowser/zkui/src/zkui/stats.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/huebrowser/zkui/src/zkui/templates/clients.mako" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/huebrowser/zkui/src/zkui/templates/create.mako" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/huebrowser/zkui/src/zkui/templates/edit.mako" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/huebrowser/zkui/src/zkui/templates/index.mako" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/huebrowser/zkui/src/zkui/templates/shared_components.mako" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/huebrowser/zkui/src/zkui/templates/tree.mako" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/huebrowser/zkui/src/zkui/templates/view.mako" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/huebrowser/zkui/src/zkui/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/huebrowser/zkui/src/zkui/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/huebrowser/zkui/src/zkui/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/huebrowser/zkui/src/zkui/windmilltests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/loggraph/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/loggraph/bin/loggraph-dev.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/loggraph/bin/loggraph.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/loggraph/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/loggraph/ivy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/loggraph/src/java/org/apache/zookeeper/graph/FilterException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/loggraph/src/java/org/apache/zookeeper/graph/FilterOp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/loggraph/src/java/org/apache/zookeeper/graph/FilterParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/loggraph/src/java/org/apache/zookeeper/graph/JsonGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/loggraph/src/java/org/apache/zookeeper/graph/Log4JEntry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/loggraph/src/java/org/apache/zookeeper/graph/Log4JSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/loggraph/src/java/org/apache/zookeeper/graph/LogEntry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/loggraph/src/java/org/apache/zookeeper/graph/LogIterator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/loggraph/src/java/org/apache/zookeeper/graph/LogServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/loggraph/src/java/org/apache/zookeeper/graph/LogSkipList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/loggraph/src/java/org/apache/zookeeper/graph/LogSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/loggraph/src/java/org/apache/zookeeper/graph/MeasureThroughput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/loggraph/src/java/org/apache/zookeeper/graph/MergedLogSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/loggraph/src/java/org/apache/zookeeper/graph/RandomAccessFileReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/loggraph/src/java/org/apache/zookeeper/graph/TransactionEntry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/loggraph/src/java/org/apache/zookeeper/graph/TxnLogSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/loggraph/src/java/org/apache/zookeeper/graph/filterops/AndOp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/loggraph/src/java/org/apache/zookeeper/graph/filterops/Arg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/loggraph/src/java/org/apache/zookeeper/graph/filterops/EqualsOp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/loggraph/src/java/org/apache/zookeeper/graph/filterops/GreaterThanOp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/loggraph/src/java/org/apache/zookeeper/graph/filterops/LessThanOp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/loggraph/src/java/org/apache/zookeeper/graph/filterops/NotOp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/loggraph/src/java/org/apache/zookeeper/graph/filterops/NumberArg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/loggraph/src/java/org/apache/zookeeper/graph/filterops/OrOp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/loggraph/src/java/org/apache/zookeeper/graph/filterops/StringArg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/loggraph/src/java/org/apache/zookeeper/graph/filterops/SymbolArg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/loggraph/src/java/org/apache/zookeeper/graph/filterops/XorOp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/loggraph/src/java/org/apache/zookeeper/graph/servlets/FileLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/loggraph/src/java/org/apache/zookeeper/graph/servlets/Fs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/loggraph/src/java/org/apache/zookeeper/graph/servlets/GraphData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/loggraph/src/java/org/apache/zookeeper/graph/servlets/JsonServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/loggraph/src/java/org/apache/zookeeper/graph/servlets/NumEvents.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/loggraph/src/java/org/apache/zookeeper/graph/servlets/StaticContent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/loggraph/src/java/org/apache/zookeeper/graph/servlets/Throughput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/loggraph/web/org/apache/zookeeper/graph/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/loggraph/web/org/apache/zookeeper/graph/resources/date.format.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/loggraph/web/org/apache/zookeeper/graph/resources/g.bar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/loggraph/web/org/apache/zookeeper/graph/resources/g.dot.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/loggraph/web/org/apache/zookeeper/graph/resources/g.line.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/loggraph/web/org/apache/zookeeper/graph/resources/g.pie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/loggraph/web/org/apache/zookeeper/graph/resources/g.raphael.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/loggraph/web/org/apache/zookeeper/graph/resources/load-big.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/loggraph/web/org/apache/zookeeper/graph/resources/load.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/loggraph/web/org/apache/zookeeper/graph/resources/loggraph.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/loggraph/web/org/apache/zookeeper/graph/resources/loggraph.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/loggraph/web/org/apache/zookeeper/graph/resources/loggraph.log.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/loggraph/web/org/apache/zookeeper/graph/resources/loggraph.server.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/loggraph/web/org/apache/zookeeper/graph/resources/loggraph.session.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/loggraph/web/org/apache/zookeeper/graph/resources/loggraph.stats.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/loggraph/web/org/apache/zookeeper/graph/resources/loggraph.ui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/loggraph/web/org/apache/zookeeper/graph/resources/main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/loggraph/web/org/apache/zookeeper/graph/resources/raphael.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/loggraph/web/org/apache/zookeeper/graph/resources/yui-min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/monitoring/JMX-RESOURCES" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/monitoring/README" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/monitoring/cacti/README" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/monitoring/check_zookeeper.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/monitoring/ganglia/README" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/monitoring/ganglia/Screenshot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/monitoring/ganglia/modpython.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/monitoring/ganglia/zookeeper.pyconf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/monitoring/ganglia/zookeeper_ganglia.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/monitoring/nagios/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/monitoring/nagios/Screenshot-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/monitoring/nagios/Screenshot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/monitoring/nagios/hostgroups.cfg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/monitoring/nagios/services.cfg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/monitoring/nagios/zookeeper.cfg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/monitoring/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/rest/NOTICE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/rest/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/rest/SPEC.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/rest/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/rest/conf/keys/README" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/rest/conf/keys/rest.cer" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/rest/conf/keys/rest.jks" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/rest/conf/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/rest/conf/rest.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/rest/ivy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/rest/rest.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/rest/src/java/org/apache/zookeeper/server/jersey/RestMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/rest/src/java/org/apache/zookeeper/server/jersey/ZooKeeperService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/rest/src/java/org/apache/zookeeper/server/jersey/cfg/Credentials.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/rest/src/java/org/apache/zookeeper/server/jersey/cfg/Endpoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/rest/src/java/org/apache/zookeeper/server/jersey/cfg/HostPort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/rest/src/java/org/apache/zookeeper/server/jersey/cfg/HostPortSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/rest/src/java/org/apache/zookeeper/server/jersey/cfg/RestCfg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/rest/src/java/org/apache/zookeeper/server/jersey/filters/HTTPBasicAuth.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/rest/src/java/org/apache/zookeeper/server/jersey/jaxb/ZChildren.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/rest/src/java/org/apache/zookeeper/server/jersey/jaxb/ZChildrenJSON.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/rest/src/java/org/apache/zookeeper/server/jersey/jaxb/ZError.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/rest/src/java/org/apache/zookeeper/server/jersey/jaxb/ZPath.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/rest/src/java/org/apache/zookeeper/server/jersey/jaxb/ZSession.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/rest/src/java/org/apache/zookeeper/server/jersey/jaxb/ZStat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/rest/src/java/org/apache/zookeeper/server/jersey/resources/JAXBContextResolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/rest/src/java/org/apache/zookeeper/server/jersey/resources/KeeperExceptionMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/rest/src/java/org/apache/zookeeper/server/jersey/resources/RuntimeExceptionMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/rest/src/java/org/apache/zookeeper/server/jersey/resources/SessionsResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/rest/src/java/org/apache/zookeeper/server/jersey/resources/ZErrorWriter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/rest/src/java/org/apache/zookeeper/server/jersey/resources/ZNodeResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/rest/src/python/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/rest/src/python/demo_master_election.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/rest/src/python/demo_queue.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/rest/src/python/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/rest/src/python/zk_dump_tree.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/rest/src/python/zkrest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/rest/src/test/org/apache/zookeeper/server/jersey/Base.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/rest/src/test/org/apache/zookeeper/server/jersey/CreateTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/rest/src/test/org/apache/zookeeper/server/jersey/DeleteTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/rest/src/test/org/apache/zookeeper/server/jersey/ExistsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/rest/src/test/org/apache/zookeeper/server/jersey/GetChildrenTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/rest/src/test/org/apache/zookeeper/server/jersey/GetTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/rest/src/test/org/apache/zookeeper/server/jersey/RestTestSuite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/rest/src/test/org/apache/zookeeper/server/jersey/RootTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/rest/src/test/org/apache/zookeeper/server/jersey/SessionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/rest/src/test/org/apache/zookeeper/server/jersey/SetTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/rest/src/test/org/apache/zookeeper/server/jersey/WadlTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/rest/src/test/zkServer.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zkfuse/Makefile.am" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zkfuse/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zkfuse/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zkfuse/configure.ac" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zkfuse/src/Makefile.am" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zkfuse/src/blockingqueue.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zkfuse/src/doxygen.cfg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zkfuse/src/event.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zkfuse/src/event.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zkfuse/src/log.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zkfuse/src/log.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zkfuse/src/log4cxx.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zkfuse/src/mutex.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zkfuse/src/thread.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zkfuse/src/thread.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zkfuse/src/zkadapter.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zkfuse/src/zkadapter.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zkfuse/src/zkfuse.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zkperl/Changes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zkperl/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zkperl/MANIFEST" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zkperl/Makefile.PL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zkperl/NOTICE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zkperl/README" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zkperl/ZooKeeper.pm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zkperl/ZooKeeper.xs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zkperl/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zkperl/t/10_invalid.t" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zkperl/t/15_thread.t" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zkperl/t/20_tie.t" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zkperl/t/22_stat_tie.t" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zkperl/t/24_watch_tie.t" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zkperl/t/30_connect.t" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zkperl/t/35_log.t" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zkperl/t/40_basic.t" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zkperl/t/45_class.t" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zkperl/t/50_access.t" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zkperl/t/60_watch.t" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zkperl/t/util.pl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zkperl/typemap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zkpython/README" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zkpython/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zkpython/ivy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zkpython/src/c/pyzk_docstrings.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zkpython/src/c/zookeeper.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zkpython/src/examples/README" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zkpython/src/examples/watch_znode_for_changes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zkpython/src/python/setup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zkpython/src/python/zk.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zkpython/src/test/acl_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zkpython/src/test/async_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zkpython/src/test/callback_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zkpython/src/test/clientid_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zkpython/src/test/close_deadlock_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zkpython/src/test/connection_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zkpython/src/test/create_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zkpython/src/test/delete_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zkpython/src/test/exists_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zkpython/src/test/get_set_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zkpython/src/test/run_tests.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zkpython/src/test/zkServer.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zkpython/src/test/zktestbase.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zktreeutil/Makefile.am" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zktreeutil/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zktreeutil/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zktreeutil/configure.ac" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zktreeutil/src/Makefile.am" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zktreeutil/src/SimpleTree.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zktreeutil/src/ZkAdaptor.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zktreeutil/src/ZkAdaptor.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zktreeutil/src/ZkTreeUtil.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zktreeutil/src/ZkTreeUtil.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zktreeutil/src/ZkTreeUtilMain.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zktreeutil/tests/zk_sample.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/NOTICE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/TODO" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/config/defaultConnectionSettings.cfg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/config/defaultNodeViewers.cfg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/ivy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/lib/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/licences/Apache Software Licence v2.0.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/java/com/nitido/utils/toaster/Toaster.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/java/org/apache/zookeeper/inspector/ZooInspector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/java/org/apache/zookeeper/inspector/encryption/BasicDataEncryptionManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/java/org/apache/zookeeper/inspector/encryption/DataEncryptionManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/java/org/apache/zookeeper/inspector/gui/IconResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/java/org/apache/zookeeper/inspector/gui/NodeViewersChangeListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/java/org/apache/zookeeper/inspector/gui/Toolbar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/java/org/apache/zookeeper/inspector/gui/ZooInspectorAboutDialog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/java/org/apache/zookeeper/inspector/gui/ZooInspectorConnectionPropertiesDialog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/java/org/apache/zookeeper/inspector/gui/ZooInspectorNodeViewersDialog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/java/org/apache/zookeeper/inspector/gui/ZooInspectorNodeViewersPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/java/org/apache/zookeeper/inspector/gui/ZooInspectorPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/java/org/apache/zookeeper/inspector/gui/ZooInspectorTreeViewer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/java/org/apache/zookeeper/inspector/gui/about.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/java/org/apache/zookeeper/inspector/gui/actions/AddNodeAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/java/org/apache/zookeeper/inspector/gui/actions/DeleteNodeAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/java/org/apache/zookeeper/inspector/gui/nodeviewer/NodeViewerACL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/java/org/apache/zookeeper/inspector/gui/nodeviewer/NodeViewerData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/java/org/apache/zookeeper/inspector/gui/nodeviewer/NodeViewerMetaData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/java/org/apache/zookeeper/inspector/gui/nodeviewer/ZooInspectorNodeViewer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/java/org/apache/zookeeper/inspector/logger/LoggerFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/java/org/apache/zookeeper/inspector/manager/NodeListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/java/org/apache/zookeeper/inspector/manager/NodesCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/java/org/apache/zookeeper/inspector/manager/Pair.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/java/org/apache/zookeeper/inspector/manager/ZooInspectorManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/java/org/apache/zookeeper/inspector/manager/ZooInspectorManagerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/java/org/apache/zookeeper/inspector/manager/ZooInspectorNodeManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/java/org/apache/zookeeper/inspector/manager/ZooInspectorNodeTreeManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/java/org/apache/zookeeper/inspector/manager/ZooInspectorReadOnlyManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/java/org/apache/zookeeper/retry/ZooKeeperRetry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/main/resources/icons/Tango/16x16/actions/add.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/main/resources/icons/Tango/16x16/actions/document-new.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/main/resources/icons/Tango/16x16/actions/document-save.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/main/resources/icons/Tango/16x16/actions/down.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/main/resources/icons/Tango/16x16/actions/media-playback-start.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/main/resources/icons/Tango/16x16/actions/media-playback-stop.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/main/resources/icons/Tango/16x16/actions/remove.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/main/resources/icons/Tango/16x16/actions/up.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/main/resources/icons/Tango/16x16/actions/view-refresh.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/main/resources/icons/Tango/16x16/mimetypes/text-x-generic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/main/resources/icons/Tango/16x16/places/folder.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/main/resources/icons/Tango/16x16/places/user-trash.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/main/resources/icons/Tango/16x16/status/info.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/main/resources/icons/Tango/22x22/actions/add.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/main/resources/icons/Tango/22x22/actions/document-new.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/main/resources/icons/Tango/22x22/actions/document-save.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/main/resources/icons/Tango/22x22/actions/down.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/main/resources/icons/Tango/22x22/actions/media-playback-start.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/main/resources/icons/Tango/22x22/actions/media-playback-stop.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/main/resources/icons/Tango/22x22/actions/remove.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/main/resources/icons/Tango/22x22/actions/up.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/main/resources/icons/Tango/22x22/actions/view-refresh.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/main/resources/icons/Tango/22x22/mimetypes/text-x-generic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/main/resources/icons/Tango/22x22/places/folder.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/main/resources/icons/Tango/22x22/places/user-trash.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/main/resources/icons/Tango/22x22/status/info.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/main/resources/icons/Tango/24x24/actions/add.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/main/resources/icons/Tango/24x24/actions/document-new.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/main/resources/icons/Tango/24x24/actions/document-save.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/main/resources/icons/Tango/24x24/actions/down.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/main/resources/icons/Tango/24x24/actions/media-playback-start.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/main/resources/icons/Tango/24x24/actions/media-playback-stop.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/main/resources/icons/Tango/24x24/actions/remove.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/main/resources/icons/Tango/24x24/actions/up.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/main/resources/icons/Tango/24x24/actions/view-refresh.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/main/resources/icons/Tango/24x24/mimetypes/text-x-generic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/main/resources/icons/Tango/24x24/places/folder.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/main/resources/icons/Tango/24x24/places/user-trash.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/main/resources/icons/Tango/24x24/status/info.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/main/resources/icons/Tango/32x32/actions/add.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/main/resources/icons/Tango/32x32/actions/document-new.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/main/resources/icons/Tango/32x32/actions/document-save.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/main/resources/icons/Tango/32x32/actions/down.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/main/resources/icons/Tango/32x32/actions/media-playback-start.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/main/resources/icons/Tango/32x32/actions/media-playback-stop.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/main/resources/icons/Tango/32x32/actions/remove.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/main/resources/icons/Tango/32x32/actions/up.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/main/resources/icons/Tango/32x32/actions/view-refresh.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/main/resources/icons/Tango/32x32/mimetypes/text-x-generic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/main/resources/icons/Tango/32x32/places/folder.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/main/resources/icons/Tango/32x32/places/user-trash.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/src/main/resources/icons/Tango/32x32/status/info.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/zooInspector-dev.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/zooInspector.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/contrib/zooinspector/zooInspector.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/docs/forrest.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/docs/src/documentation/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/docs/src/documentation/TODO.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/docs/src/documentation/classes/CatalogManager.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/docs/src/documentation/conf/cli.xconf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/docs/src/documentation/content/xdocs/index.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/docs/src/documentation/content/xdocs/javaExample.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/docs/src/documentation/content/xdocs/recipes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/docs/src/documentation/content/xdocs/site.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/docs/src/documentation/content/xdocs/tabs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/docs/src/documentation/content/xdocs/zookeeperAdmin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/docs/src/documentation/content/xdocs/zookeeperHierarchicalQuorums.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/docs/src/documentation/content/xdocs/zookeeperInternals.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/docs/src/documentation/content/xdocs/zookeeperJMX.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/docs/src/documentation/content/xdocs/zookeeperObservers.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/docs/src/documentation/content/xdocs/zookeeperOtherInfo.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/docs/src/documentation/content/xdocs/zookeeperOver.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/docs/src/documentation/content/xdocs/zookeeperProgrammers.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/docs/src/documentation/content/xdocs/zookeeperQuotas.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/docs/src/documentation/content/xdocs/zookeeperReconfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/docs/src/documentation/content/xdocs/zookeeperStarted.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/docs/src/documentation/content/xdocs/zookeeperTutorial.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/docs/src/documentation/resources/images/2pc.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/docs/src/documentation/resources/images/bk-overview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/docs/src/documentation/resources/images/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/docs/src/documentation/resources/images/hadoop-logo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/docs/src/documentation/resources/images/state_dia.dia" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/docs/src/documentation/resources/images/state_dia.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/docs/src/documentation/resources/images/zkarch.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/docs/src/documentation/resources/images/zkcomponents.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/docs/src/documentation/resources/images/zknamespace.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/docs/src/documentation/resources/images/zkperfRW-3.2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/docs/src/documentation/resources/images/zkperfRW.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/docs/src/documentation/resources/images/zkperfreliability.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/docs/src/documentation/resources/images/zkservice.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/docs/src/documentation/resources/images/zookeeper_small.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/docs/src/documentation/skinconf.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/docs/status.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/OldChangeLog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/lib/cobertura/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/lib/jdiff/zookeeper_3.1.1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/lib/jline-2.11.LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/lib/log4j-1.2.17.LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/lib/slf4j-1.7.5.LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/jute/BinaryInputArchive.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/jute/BinaryOutputArchive.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/jute/CsvInputArchive.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/jute/CsvOutputArchive.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/jute/Index.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/jute/InputArchive.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/jute/OutputArchive.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/jute/Record.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/jute/RecordReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/jute/RecordWriter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/jute/Utils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/jute/XmlInputArchive.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/jute/XmlOutputArchive.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/jute/compiler/CGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/jute/compiler/CSharpGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/jute/compiler/CppGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/jute/compiler/JBoolean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/jute/compiler/JBuffer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/jute/compiler/JByte.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/jute/compiler/JCompType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/jute/compiler/JDouble.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/jute/compiler/JField.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/jute/compiler/JFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/jute/compiler/JFloat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/jute/compiler/JInt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/jute/compiler/JLong.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/jute/compiler/JMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/jute/compiler/JRecord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/jute/compiler/JString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/jute/compiler/JType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/jute/compiler/JVector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/jute/compiler/JavaGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/jute/compiler/package.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/jute/package.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/AsyncCallback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/ClientCnxn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/ClientCnxnSocket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/ClientCnxnSocketNIO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/ClientCnxnSocketNetty.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/ClientWatchManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/CreateMode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/Environment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/JLineZNodeCompleter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/KeeperException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/Login.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/MultiResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/MultiTransactionRecord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/Op.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/OpResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/Quotas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/ServerAdminClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/Shell.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/StatsTrack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/Testable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/Transaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/Version.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/WatchDeregistration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/WatchedEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/Watcher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/ZKUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/ZooDefs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/ZooKeeper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/ZooKeeperMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/ZooKeeperTestable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/admin/ZooKeeperAdmin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/cli/AclParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/cli/AddAuthCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/cli/CliCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/cli/CliException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/cli/CliParseException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/cli/CliWrapperException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/cli/CloseCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/cli/CommandNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/cli/CreateCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/cli/DelQuotaCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/cli/DeleteAllCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/cli/DeleteCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/cli/GetAclCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/cli/GetCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/cli/GetConfigCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/cli/ListQuotaCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/cli/Ls2Command.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/cli/LsCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/cli/MalformedCommandException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/cli/MalformedPathException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/cli/ReconfigCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/cli/RemoveWatchesCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/cli/SetAclCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/cli/SetCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/cli/SetQuotaCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/cli/StatCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/cli/StatPrinter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/cli/SyncCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/client/ConnectStringParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/client/FourLetterWordMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/client/HostProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/client/StaticHostProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/client/ZKClientConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/client/ZooKeeperSaslClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/common/AtomicFileOutputStream.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/common/AtomicFileWritingIdiom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/common/IOUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/common/PathTrie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/common/PathUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/common/StringUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/common/Time.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/common/X509Exception.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/common/X509Util.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/common/ZKConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/jmx/CommonNames.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/jmx/MBeanRegistry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/jmx/ManagedUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/jmx/ZKMBeanInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/ByteBufferInputStream.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/ByteBufferOutputStream.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/ConnectionBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/ConnectionMXBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/ContainerManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/DataNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/DataTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/DataTreeBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/DataTreeMXBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/DatadirCleanupManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/EphemeralType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/ExitCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/ExpiryQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/FinalRequestProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/LogFormatter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/NIOServerCnxn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/NIOServerCnxnFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/NettyServerCnxn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/NettyServerCnxnFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/ObserverBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/PrepRequestProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/PurgeTxnLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/RateLogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/ReferenceCountedACLCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/Request.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/RequestProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/ServerCnxn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/ServerCnxnFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/ServerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/ServerStats.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/SessionTracker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/SessionTrackerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/SnapshotFormatter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/Stats.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/SyncRequestProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/TraceFormatter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/TxnLogProposalIterator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/UnimplementedRequestProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/WatchManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/WatchesPathReport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/WatchesReport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/WatchesSummary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/WorkerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/ZKDatabase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/ZooKeeperCriticalThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/ZooKeeperSaslServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/ZooKeeperServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/ZooKeeperServerBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/ZooKeeperServerConf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/ZooKeeperServerListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/ZooKeeperServerListenerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/ZooKeeperServerMXBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/ZooKeeperServerMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/ZooKeeperServerShutdownHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/ZooKeeperThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/ZooTrace.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/admin/AdminServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/admin/AdminServerFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/admin/Command.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/admin/CommandBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/admin/CommandOutputter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/admin/CommandResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/admin/Commands.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/admin/DummyAdminServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/admin/JettyAdminServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/admin/JsonOutputter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/auth/AuthenticationProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/auth/DigestAuthenticationProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/auth/DigestLoginModule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/auth/IPAuthenticationProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/auth/KerberosName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/auth/KeyAuthenticationProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/auth/ProviderRegistry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/auth/SASLAuthenticationProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/auth/SaslServerCallbackHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/auth/ServerAuthenticationProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/auth/WrappedAuthenticationProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/auth/X509AuthenticationProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/command/AbstractFourLetterCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/command/CnxnStatResetCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/command/CommandExecutor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/command/ConfCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/command/ConsCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/command/DirsCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/command/DumpCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/command/EnvCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/command/FourLetterCommands.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/command/IsroCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/command/MonitorCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/command/NopCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/command/RuokCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/command/SetTraceMaskCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/command/StatCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/command/StatResetCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/command/TraceMaskCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/command/WatchCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/package.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/persistence/FileSnap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/persistence/FileTxnLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/persistence/FileTxnSnapLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/persistence/SnapShot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/persistence/TxnLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/persistence/Util.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/quorum/AckRequestProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/quorum/AuthFastLeaderElection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/quorum/CommitProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/quorum/Election.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/quorum/FastLeaderElection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/quorum/Follower.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/quorum/FollowerBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/quorum/FollowerMXBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/quorum/FollowerRequestProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/quorum/FollowerZooKeeperServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/quorum/Leader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/quorum/LeaderBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/quorum/LeaderElectionBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/quorum/LeaderElectionMXBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/quorum/LeaderMXBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/quorum/LeaderRequestProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/quorum/LeaderSessionTracker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/quorum/LeaderZooKeeperServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/quorum/Learner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/quorum/LearnerHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/quorum/LearnerSessionTracker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/quorum/LearnerSnapshot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/quorum/LearnerSnapshotThrottler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/quorum/LearnerSyncRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/quorum/LearnerZooKeeperServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/quorum/LocalPeerBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/quorum/LocalPeerMXBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/quorum/LocalSessionTracker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/quorum/Observer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/quorum/ObserverMXBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/quorum/ObserverRequestProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/quorum/ObserverZooKeeperServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/quorum/ProposalRequestProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/quorum/QuorumBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/quorum/QuorumCnxManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/quorum/QuorumMXBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/quorum/QuorumPeer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/quorum/QuorumPeerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/quorum/QuorumPeerMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/quorum/QuorumStats.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/quorum/QuorumZooKeeperServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/quorum/ReadOnlyBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/quorum/ReadOnlyRequestProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/quorum/ReadOnlyZooKeeperServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/quorum/RemotePeerBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/quorum/RemotePeerMXBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/quorum/SendAckRequestProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/quorum/ServerBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/quorum/ServerMXBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/quorum/SnapshotThrottleException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/quorum/StateSummary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/quorum/SyncedLearnerTracker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/quorum/UpgradeableSessionTracker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/quorum/Vote.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/quorum/flexible/QuorumHierarchical.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/quorum/flexible/QuorumMaj.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/quorum/flexible/QuorumVerifier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/util/ConfigUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/util/KerberosUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/util/OSMXBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/util/SerializeUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/util/VerifyingFileFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/server/util/ZxidUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/org/apache/zookeeper/version/util/VerGen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/main/overview.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/systest/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/systest/org/apache/zookeeper/test/system/BaseSysTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/systest/org/apache/zookeeper/test/system/DuplicateNameException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/systest/org/apache/zookeeper/test/system/GenerateLoad.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/systest/org/apache/zookeeper/test/system/Instance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/systest/org/apache/zookeeper/test/system/InstanceContainer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/systest/org/apache/zookeeper/test/system/InstanceManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/systest/org/apache/zookeeper/test/system/NoAssignmentException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/systest/org/apache/zookeeper/test/system/NoAvailableContainers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/systest/org/apache/zookeeper/test/system/QuorumPeerInstance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/systest/org/apache/zookeeper/test/system/SimpleClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/systest/org/apache/zookeeper/test/system/SimpleSysTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/bin/check_compatibility.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/bin/test-github-pr.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/bin/test-patch.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/bin/test-patch.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/bin/test-scripts.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/checkstyle-noframes-sorted.xsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/checkstyle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/config/findbugsExcludeFile.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/data/buffersize/create/version-2/log.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/data/buffersize/create/version-2/snapshot.0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/data/buffersize/set/version-2/log.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/data/buffersize/set/version-2/snapshot.0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/data/buffersize/snapshot/version-2/log.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/data/buffersize/snapshot/version-2/snapshot.0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/data/buffersize/snapshot/version-2/snapshot.2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/data/invalidsnap/version-2/log.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/data/invalidsnap/version-2/log.274" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/data/invalidsnap/version-2/log.63b" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/data/invalidsnap/version-2/snapshot.0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/data/invalidsnap/version-2/snapshot.272" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/data/invalidsnap/version-2/snapshot.273" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/data/invalidsnap/version-2/snapshot.639" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/data/invalidsnap/version-2/snapshot.83f" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/data/ssl/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/data/ssl/testKeyStore.jks" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/data/ssl/testTrustStore.jks" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/data/upgrade/log.100000001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/data/upgrade/log.100001bf0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/data/upgrade/snapshot.100000000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/data/upgrade/snapshot.100001bec" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/jute/BinaryInputArchiveTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/ClientCnxnSocketTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/ClientReconnectTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/CustomHostProviderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/JUnit4ZKTestRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/JaasConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/MockPacket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/MultiResponseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/MultiTransactionRecordTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/PortAssignment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/PortAssignmentTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/RemoveWatchesCmdTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/RemoveWatchesTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/SaslAuthTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/ServerConfigTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/TestableZooKeeper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/VerGenTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/ZKParameterized.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/ZKTestCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/ZooKeeperTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/ZooKeeperTestableTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/client/ZKClientConfigTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/common/AtomicFileWritingIdiomTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/common/PathUtilsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/common/TimeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/server/ByteBufferInputStreamTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/server/CRCTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/server/CreateContainerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/server/CreateTTLTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/server/DataNodeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/server/DataTreeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/server/DatadirCleanupManagerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/server/DeserializationPerfTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/server/EphemeralTypeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/server/InvalidSnapCountTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/server/InvalidSnapshotTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/server/MockNIOServerCnxn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/server/MockSelectorThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/server/MockServerCnxn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/server/MultiOpSessionUpgradeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/server/NIOServerCnxnTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/server/NettyServerCnxnTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/server/PrepRequestProcessorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/server/PurgeTxnTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/server/ReferenceCountedACLCacheTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/server/SerializationPerfTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/server/ServerCnxnFactoryAccessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/server/SessionTrackerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/server/ToStringTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/server/WatchesPathReportTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/server/WatchesReportTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/server/WatchesSummaryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/server/ZooKeeperServerBeanTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/server/ZooKeeperServerConfTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/server/ZooKeeperServerMainTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/server/ZooKeeperServerStartupTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/server/ZooKeeperServerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/server/ZooKeeperThreadTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/server/ZxidRolloverTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/server/admin/CommandResponseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/server/admin/CommandsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/server/admin/JettyAdminServerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/server/persistence/FileTxnSnapLogTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/server/quorum/CommitProcessorConcurrencyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/server/quorum/CommitProcessorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/server/quorum/EphemeralNodeDeletionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/server/quorum/FLEBackwardElectionRoundTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/server/quorum/FLELostMessageTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/server/quorum/FLETestUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/server/quorum/LearnerHandlerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/server/quorum/LearnerSnapshotThrottlerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/server/quorum/LearnerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/server/quorum/LocalPeerBeanTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/server/quorum/QuorumPeerConfigTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/server/quorum/QuorumPeerMainTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/server/quorum/QuorumPeerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/server/quorum/QuorumPeerTestBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/server/quorum/QuorumRequestPipelineTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/server/quorum/QuorumServerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/server/quorum/RaceConditionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/server/quorum/ReconfigBackupTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/server/quorum/ReconfigDuringLeaderSyncTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/server/quorum/ReconfigFailureCasesTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/server/quorum/ReconfigLegacyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/server/quorum/ReconfigRecoveryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/server/quorum/ReconfigRollingRestartCompatibilityTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/server/quorum/RemotePeerBeanTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/server/quorum/StandaloneDisabledTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/server/quorum/WatchLeakTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/server/quorum/Zab1_0Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/server/util/PortForwarder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/server/util/VerifyingFileFactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/ACLCountTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/ACLRootTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/ACLTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/AsyncHammerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/AsyncOps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/AsyncOpsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/AsyncTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/AtomicFileOutputStreamTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/AuthTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/BufferSizeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/ChrootAsyncTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/ChrootClientTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/ChrootTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/ClientBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/ClientHammerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/ClientPortBindTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/ClientRetryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/ClientSkipACLTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/ClientTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/CnxManagerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/ConnectStringParserTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/CreateModeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/CreateTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/DisconnectableZooKeeper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/DisconnectedWatcherTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/DuplicateLocalSessionUpgradeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/EmptiedSnapshotRecoveryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/EventTypeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/FLENewEpochTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/FLEPredicateTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/FLERestartTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/FLETest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/FLEZeroWeightTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/FollowerResyncConcurrencyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/FourLetterWordsQuorumTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/FourLetterWordsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/FourLetterWordsWhiteListTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/GetChildren2Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/GetProposalFromTxnTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/HierarchicalQuorumTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/IntegrityCheck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/InvalidSnapshotTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/JMXEnv.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/KeeperStateTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/KeyAuthClientTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/LeaderSessionTrackerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/LoadFromLogTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/LocalSessionRequestTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/LocalSessionsOnlyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/MaxCnxnsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/MultiAsyncTransactionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/MultiTransactionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/NIOConnectionFactoryFdLeakTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/NettyNettySuiteBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/NettyNettySuiteHammerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/NettyNettySuiteTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/NioNettySuiteBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/NioNettySuiteHammerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/NioNettySuiteTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/NonRecoverableErrorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/NullDataTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/OOMTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/OSMXBeanTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/ObserverHierarchicalQuorumTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/ObserverLETest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/ObserverQuorumHammerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/ObserverTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/QuorumBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/QuorumHammerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/QuorumMajorityTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/QuorumQuotaTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/QuorumTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/QuorumUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/QuorumUtilTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/QuorumZxidSyncTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/ReadOnlyModeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/ReconfigExceptionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/ReconfigMisconfigTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/ReconfigTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/RecoveryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/RepeatStartupTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/RestoreCommittedLogTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/SSLAuthTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/SSLTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/SaslAuthDesignatedClientTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/SaslAuthDesignatedServerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/SaslAuthFailDesignatedClientTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/SaslAuthFailNotifyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/SaslAuthFailTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/SaslAuthMissingClientConfigTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/SaslClientTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/SaslSuperUserTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/ServerCnxnTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/SessionInvalidationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/SessionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/SessionTrackerCheckTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/SessionUpgradeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/SledgeHammer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/StandaloneTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/StatTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/StaticHostProviderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/StringUtilTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/SyncCallTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/TestHammer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/TestUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/TruncateTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/WatchEventWhenAutoResetTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/WatchedEventTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/WatcherFuncTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/WatcherTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/X509AuthTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/ZkDatabaseCorruptionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/ZooKeeperQuotaTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/java/test/org/apache/zookeeper/test/ZooKeeperTestClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/lastRevision.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/lastRevision.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/pom.template" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/recipes/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/recipes/build-recipes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/recipes/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/recipes/election/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/recipes/election/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/recipes/election/src/java/org/apache/zookeeper/recipes/leader/LeaderElectionAware.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/recipes/election/src/java/org/apache/zookeeper/recipes/leader/LeaderElectionSupport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/recipes/election/src/java/org/apache/zookeeper/recipes/leader/LeaderOffer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/recipes/election/test/org/apache/zookeeper/recipes/leader/LeaderElectionSupportTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/recipes/lock/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/recipes/lock/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/recipes/lock/src/c/INSTALL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/recipes/lock/src/c/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/recipes/lock/src/c/Makefile.am" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/recipes/lock/src/c/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/recipes/lock/src/c/acinclude.m4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/recipes/lock/src/c/aminclude.am" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/recipes/lock/src/c/c-doc.Doxyfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/recipes/lock/src/c/configure.ac" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/recipes/lock/src/c/include/zoo_lock.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/recipes/lock/src/c/src/zoo_lock.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/recipes/lock/src/c/tests/TestClient.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/recipes/lock/src/c/tests/TestDriver.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/recipes/lock/src/c/tests/Util.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/recipes/lock/src/c/tests/Util.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/recipes/lock/src/c/tests/zkServer.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/recipes/lock/src/java/org/apache/zookeeper/recipes/lock/LockListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/recipes/lock/src/java/org/apache/zookeeper/recipes/lock/ProtocolSupport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/recipes/lock/src/java/org/apache/zookeeper/recipes/lock/WriteLock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/recipes/lock/src/java/org/apache/zookeeper/recipes/lock/ZNodeName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/recipes/lock/src/java/org/apache/zookeeper/recipes/lock/ZooKeeperOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/recipes/lock/test/org/apache/zookeeper/recipes/lock/WriteLockTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/recipes/lock/test/org/apache/zookeeper/recipes/lock/ZNodeNameTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/recipes/queue/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/recipes/queue/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/recipes/queue/src/c/INSTALL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/recipes/queue/src/c/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/recipes/queue/src/c/Makefile.am" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/recipes/queue/src/c/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/recipes/queue/src/c/acinclude.m4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/recipes/queue/src/c/aminclude.am" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/recipes/queue/src/c/c-doc.Doxyfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/recipes/queue/src/c/configure.ac" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/recipes/queue/src/c/include/zoo_queue.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/recipes/queue/src/c/src/zoo_queue.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/recipes/queue/src/c/tests/TestClient.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/recipes/queue/src/c/tests/TestDriver.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/recipes/queue/src/c/tests/Util.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/recipes/queue/src/c/tests/Util.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/recipes/queue/src/c/tests/zkServer.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/recipes/queue/src/java/org/apache/zookeeper/recipes/queue/DistributedQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/recipes/queue/test/org/apache/zookeeper/recipes/queue/DistributedQueueTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/src/zookeeper.jute" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper-master/zk-merge-pr.py" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-2141839041">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="class" value="2" />
+          <entry key="java" value="1" />
+          <entry key="xml" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="2" />
+          <entry key="JAVA" value="1" />
+          <entry key="XML" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="166" />
+          <entry key="xml" value="7" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="166" />
+          <entry key="XML" value="7" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wanxian/zookeeper/ConnectionDemo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="16" column="49" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#466#809#0" expanded="true" />
+                <element signature="e#808#809#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/zookeeper/zookeeper/3.4.8/zookeeper-3.4.8.jar!/org/apache/zookeeper/ZooKeeper.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="298">
+              <caret line="92" column="64" selection-start-line="92" selection-start-column="63" selection-end-line="92" selection-end-column="70" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/zookeeper/zookeeper/3.4.8/zookeeper-3.4.8.jar!/org/apache/zookeeper/Watcher.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="281">
+              <caret line="55" column="12" selection-start-line="55" selection-start-column="12" selection-end-line="55" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$/../../../mpCode/mybatis-plus" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../mpCode/mybatis-plus/mybatis-plus-generator" value="PREVIEW" />
+        <entry key="D:/tom-space/vip-20180303/spring-framework-5.0.2.RELEASE-中文注释版" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wanxian/zookeeper/ConnectionDemo.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\repository" />
+        <option name="mavenHome" value="D:/config/apache-maven-3.3.9" />
+        <option name="userSettingsFile" value="C:\Users\shushengkeji\.m2\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="zookeeper-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zookeeper-demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zookeeper-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zookeeper-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zookeeper-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zookeeper-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zookeeper-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zookeeper-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zookeeper-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zookeeper-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zookeeper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zookeeper-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="zookeeper-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.zookeeper:zookeeper:3.4.8" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="zookeeper-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.zookeeper:zookeeper:3.4.8" type="70bed36:NamedLibraryElementNode" />
+              <item name="zookeeper-3.4.8.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zookeeper-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.zookeeper:zookeeper:3.4.8" type="70bed36:NamedLibraryElementNode" />
+              <item name="zookeeper-3.4.8.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="apache" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zookeeper-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.zookeeper:zookeeper:3.4.8" type="70bed36:NamedLibraryElementNode" />
+              <item name="zookeeper-3.4.8.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="apache" type="462c0819:PsiDirectoryNode" />
+              <item name="zookeeper" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543396861546" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="ConnectionDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wanxian.zookeeper.ConnectionDemo" />
+      <module name="zookeeper-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wanxian.zookeeper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ConnectionDemo" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="30dd48b4-b3ca-4c8f-8478-221a501189fe" name="Default Changelist" comment="" />
+      <created>1543395238963</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1543395238963</updated>
+      <workItem from="1543395240178" duration="1681000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1681000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32899022" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Maven Projects" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/zookeeper/zookeeper/3.4.8/zookeeper-3.4.8.jar!/org/apache/zookeeper/ZooKeeper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="92" column="64" selection-start-line="92" selection-start-column="63" selection-end-line="92" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/zookeeper/zookeeper/3.4.8/zookeeper-3.4.8.jar!/org/apache/zookeeper/Watcher.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="55" column="12" selection-start-line="55" selection-start-column="12" selection-end-line="55" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wanxian/zookeeper/ConnectionDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="16" column="49" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#466#809#0" expanded="true" />
+            <element signature="e#808#809#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
