@@ -35,7 +35,7 @@ public class CuratorWatcherDemo {
         TreeCacheListener treeCacheListener= new TreeCacheListener() {
             @Override
             public void childEvent(CuratorFramework curatorFramework, TreeCacheEvent treeCacheEvent) throws Exception {
-                System.out.println("收到事件:"+treeCacheEvent.getType());
+                System.out.println(treeCacheEvent.getType()+"->"+treeCacheEvent.getData().getPath());
             }
         };
         treeCache.getListenable().addListener(treeCacheListener);
