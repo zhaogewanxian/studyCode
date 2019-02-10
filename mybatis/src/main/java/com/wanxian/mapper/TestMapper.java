@@ -1,4 +1,4 @@
-package com.wanxian.version1;
+package com.wanxian.mapper;
 
 import com.wanxian.entity.Test;
 

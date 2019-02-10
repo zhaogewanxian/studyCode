@@ -18,7 +18,7 @@ public class Configuration {
      * 模拟解析xml
      */
     static class TestMapperXml {
-        public static final String namespace = "com.wanxian.version1.TestMapper";
+        public static final String namespace = "com.wanxian.mapper.TestMapper";
         public static final Map<String, String> sqlMap = new HashMap<>();
 
         static {
