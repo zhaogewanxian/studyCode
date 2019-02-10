@@ -10,7 +10,7 @@ import java.util.stream.Stream;
 /**
  *
  */
-public class App {
+public class Bootstrap {
 
     public static void main(String[] args) {
         SqlSession sqlSession = new SqlSession(new SimpleExecutor(), new Configuration());
