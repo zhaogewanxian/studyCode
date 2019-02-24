@@ -6,6 +6,7 @@ import com.wanxian.spring.annotation.Autowried;
 import com.wanxian.spring.annotation.Controller;
 import com.wanxian.spring.annotation.RequestMapping;
 import com.wanxian.spring.annotation.RequestParam;
+import com.wanxian.spring.mvc.ModleAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -18,8 +19,8 @@ public class TestController {
     private IDemoService demoService;
 
     @RequestMapping("/query.json")
-    public void query(HttpServletRequest req, HttpServletResponse resp,
-                      @RequestParam("name") String name) {
+    public ModleAndView query(HttpServletRequest req, HttpServletResponse resp,
+                              @RequestParam("name") String name) {
         String result = demoService.get(name);
         System.out.println(result);
 //		try {
@@ -27,6 +28,7 @@ public class TestController {
 //		} catch (IOException e) {
 //			e.printStackTrace();
 //		}
+        return null;
     }
 
     @RequestMapping("/edit.json")
