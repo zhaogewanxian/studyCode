@@ -72,7 +72,7 @@ public class ApplicationContext implements BeanFactory {
         }
 
 
-        Field[] fields = clazz.getClass().getDeclaredFields();
+        Field[] fields = clazz.getDeclaredFields();
         for (Field field : fields) {
             if (!field.isAnnotationPresent(Autowried.class)) {
                 continue;

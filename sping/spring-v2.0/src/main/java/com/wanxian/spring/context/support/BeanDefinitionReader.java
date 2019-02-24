@@ -33,7 +33,6 @@ public class BeanDefinitionReader {
             }
         }
         doScanner(config.getProperty(SCAN_PACKAGE));
-
     }
 
 
