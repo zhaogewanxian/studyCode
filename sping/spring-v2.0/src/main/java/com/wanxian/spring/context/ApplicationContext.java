@@ -14,6 +14,7 @@ import java.lang.reflect.Field;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Properties;
 import java.util.concurrent.ConcurrentHashMap;
 
 public class ApplicationContext implements BeanFactory {
@@ -41,9 +42,9 @@ public class ApplicationContext implements BeanFactory {
         //依赖注入(lazy-init =false),执行依赖注入
         doAutoWried();
 
-
-        TestController testController = (TestController) getBean("testController");
-        testController.query(null, null, "wanxian");
+//
+//        TestController testController = (TestController) getBean("testController");
+//        testController.query(null, null, "wanxian");
 
     }
 
@@ -56,9 +57,9 @@ public class ApplicationContext implements BeanFactory {
                 getBean(beanName);
             }
         }
-        for(Map.Entry<String,BeanWrapper> beanWrapperEntry : this.beanWrapperMap.entrySet()){
+        for (Map.Entry<String, BeanWrapper> beanWrapperEntry : this.beanWrapperMap.entrySet()) {
 
-            populateBean(beanWrapperEntry.getKey(),beanWrapperEntry.getValue().getOriginalInstance());
+            populateBean(beanWrapperEntry.getKey(), beanWrapperEntry.getValue().getOriginalInstance());
 
         }
     }
@@ -172,5 +173,17 @@ public class ApplicationContext implements BeanFactory {
         }
 
         return null;
+    }
+
+
+    public String[] getBeanDefinitionNames() {
+        return this.beanDefinitionMap.keySet().toArray(new String[this.beanDefinitionMap.size()]);
+    }
+
+    public int getBeanDefinitionCount() {
+        return this.beanDefinitionMap.size();
+    }
+    public Properties getConfig(){
+       return this.reader.getConfig();
     }
 }

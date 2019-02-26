@@ -47,7 +47,6 @@ public class BeanDefinitionReader {
             } else {
                 registerBeanClass.add(packName + "." + file.getName().replace(".class", ""));
             }
-
         }
 
     }
