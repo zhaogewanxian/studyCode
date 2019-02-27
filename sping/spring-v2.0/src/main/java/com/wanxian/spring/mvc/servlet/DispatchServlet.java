@@ -3,11 +3,10 @@ package com.wanxian.spring.mvc.servlet;
 import com.wanxian.spring.annotation.Controller;
 import com.wanxian.spring.annotation.RequestMapping;
 import com.wanxian.spring.annotation.RequestParam;
-import com.wanxian.spring.annotation.Service;
 import com.wanxian.spring.context.ApplicationContext;
 import com.wanxian.spring.mvc.HandlerAdapter;
 import com.wanxian.spring.mvc.HandlerMapping;
-import com.wanxian.spring.mvc.ModleAndView;
+import com.wanxian.spring.mvc.ModelAndView;
 import com.wanxian.spring.mvc.ViewResolver;
 
 import javax.servlet.ServletConfig;
@@ -19,6 +18,7 @@ import java.io.File;
 import java.io.IOException;
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Method;
+import java.net.URL;
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.regex.Matcher;
@@ -80,7 +80,8 @@ public class DispatchServlet extends HttpServlet {
         //解决页面名字和模板文件关联的问题
         String templateRoot = context.getConfig().getProperty("templateRoot");
         String templateRootPath = this.getClass().getClassLoader().getResource(templateRoot).getFile();
-
+        //URL url = this.getClass().getClassLoader().getResource(packName.replace(".", "/"));//转换成文件路径，找到文件目录、文件
+        //File classDir = new File(url.getFile());
         File templateRootDir = new File(templateRootPath);
 
         for (File template : templateRootDir.listFiles()) {
@@ -188,12 +189,25 @@ public class DispatchServlet extends HttpServlet {
             return;
         }
         HandlerAdapter ha = getHandlerAdapter(handler);
-        ModleAndView mv = ha.handle(request, response, handler);
-        processDispatchResult(request, mv);
+        ModelAndView mv = ha.handle(request, response, handler);
+        processDispatchResult(response, mv);
 
     }
 
-    private void processDispatchResult(HttpServletRequest request, ModleAndView mv) {
+    private void processDispatchResult(HttpServletResponse response, ModelAndView mv) throws Exception{
+        if (mv ==null) return;
+        if (this.viewResolvers.isEmpty())return;
+        for (ViewResolver viewResolver:
+             this.viewResolvers) {
+
+            if (!mv.getViewName().equals(viewResolver.getName()))continue;
+
+            String out = viewResolver.viewResolver(mv);
+            if (null !=out){
+                response.getWriter().write(out);
+            }
+
+        }
     }
 
     //参数动态处理，类型转换
