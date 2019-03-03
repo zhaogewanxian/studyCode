@@ -11,6 +11,8 @@ import com.wanxian.spring.mvc.ModelAndView;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 @Controller
 @RequestMapping("/demo")
@@ -36,7 +38,9 @@ public class TestController {
     public ModelAndView add(HttpServletRequest request,HttpServletResponse response,
                               @RequestParam("name") String name,@RequestParam("addr") String addr){
         String result = demoService.get(name);
-        return out(response,result);
+        Map<String,Object> model = new HashMap<String,Object>();
+        model.put("teacher", name);
+        return new ModelAndView("first.html",model);
     }
 
     @RequestMapping("/edit.json")

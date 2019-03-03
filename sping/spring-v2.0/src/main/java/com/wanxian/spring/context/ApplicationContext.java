@@ -4,6 +4,7 @@ import com.wanxian.demo.controller.TestController;
 import com.wanxian.spring.annotation.Autowried;
 import com.wanxian.spring.annotation.Controller;
 import com.wanxian.spring.annotation.Service;
+import com.wanxian.spring.aop.AopConfig;
 import com.wanxian.spring.beans.BeanDefinition;
 import com.wanxian.spring.beans.BeanPostProcessor;
 import com.wanxian.spring.beans.BeanWrapper;
@@ -11,16 +12,17 @@ import com.wanxian.spring.context.support.BeanDefinitionReader;
 import com.wanxian.spring.core.BeanFactory;
 
 import java.lang.reflect.Field;
+import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.regex.Pattern;
 
-public class ApplicationContext implements BeanFactory {
+public class ApplicationContext extends DefaultListableBeanFactory implements BeanFactory {
     private String[] configLocation;
     private BeanDefinitionReader reader;
-    private Map<String, BeanDefinition> beanDefinitionMap = new ConcurrentHashMap<String, BeanDefinition>();
     //用来保证容器的单例
     private Map<String, Object> beanCacheMap = new HashMap<String, Object>();
     private Map<String, BeanWrapper> beanWrapperMap = new ConcurrentHashMap<String, BeanWrapper>();
@@ -145,6 +147,7 @@ public class ApplicationContext implements BeanFactory {
             //实例初始化之前调用一次
             beanPostProcessor.postProcessBeforeInitialization(instance, beanName);
             BeanWrapper beanWrapper = new BeanWrapper(instance);
+            beanWrapper.setAopConfig(instantionAopConfig(beanDefinition));
             this.beanWrapperMap.put(beanName, beanWrapper);
             //实例初始化之后调用一次
             beanPostProcessor.postProcessAfterInitialization(instance, beanName);
@@ -155,6 +158,26 @@ public class ApplicationContext implements BeanFactory {
         }
         return null;
     }
+
+    private AopConfig instantionAopConfig(BeanDefinition beanDefinition) throws Exception {
+        AopConfig config = new AopConfig();
+        String expression = reader.getConfig().getProperty("poinCut");
+        String[] before = reader.getConfig().getProperty("aspectBefore").split("\\s");
+        String[] after = reader.getConfig().getProperty("aspectAfter").split("\\s");
+        String className = beanDefinition.getBeanClassName();
+        Pattern pattern = Pattern.compile(expression);
+        Class<?> clazz = Class.forName(className);
+        Class aspectClass = Class.forName(before[0]);
+        for (Method m : clazz.getMethods()
+        ) {
+            if (pattern.matcher(m.toString()).matches()) {
+                config.put(m, aspectClass.newInstance(),
+                        new Method[]{aspectClass.getMethod(before[1]), aspectClass.getMethod(after[1])});
+            }
+        }
+        return config;
+    }
+
 
     private Object instantionBean(BeanDefinition beanDefinition) {
         Object instance = null;
@@ -183,7 +206,8 @@ public class ApplicationContext implements BeanFactory {
     public int getBeanDefinitionCount() {
         return this.beanDefinitionMap.size();
     }
-    public Properties getConfig(){
-       return this.reader.getConfig();
+
+    public Properties getConfig() {
+        return this.reader.getConfig();
     }
 }

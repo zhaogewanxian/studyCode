@@ -3,6 +3,7 @@ package com.wanxian.spring.mvc.servlet;
 import com.wanxian.spring.annotation.Controller;
 import com.wanxian.spring.annotation.RequestMapping;
 import com.wanxian.spring.annotation.RequestParam;
+import com.wanxian.spring.aop.ProxyUtils;
 import com.wanxian.spring.context.ApplicationContext;
 import com.wanxian.spring.mvc.HandlerAdapter;
 import com.wanxian.spring.mvc.HandlerMapping;
@@ -134,41 +135,42 @@ public class DispatchServlet extends HttpServlet {
 
     //用来保存Controller中配置的RequestMapping和Method的一个对应关系
     private void initHandlerMappings(ApplicationContext context) {
+        try {
+            //从容器中取到所有的实例
+            String[] beanNames = context.getBeanDefinitionNames();
 
-        //从容器中取到所有的实例
-        String[] beanNames = context.getBeanDefinitionNames();
-
-        for (String beanName :
-                beanNames) {
-            Object instance = context.getBean(beanName);
-            Class<?> clazz = instance.getClass();
-            //不是controller,直接返回
-            if (!(clazz.isAnnotationPresent(Controller.class))) {//
-                continue;
-            }
-            String baseUrl = "";
-            if (clazz.isAnnotationPresent(RequestMapping.class)) {
-                RequestMapping requestMapping = clazz.getAnnotation(RequestMapping.class);
-                baseUrl = requestMapping.value();
-            }
-            //扫描所有的public方法
-            Method[] methods = clazz.getMethods();
-            for (Method method : methods) {
-                if (!method.isAnnotationPresent(RequestMapping.class)) {
+            for (String beanName :
+                    beanNames) {
+                Object proxy = context.getBean(beanName);
+                Object controller = ProxyUtils.getTargetObject(proxy);
+                Class<?> clazz = controller.getClass();
+                //不是controller,直接返回
+                if (!(clazz.isAnnotationPresent(Controller.class))) {//
                     continue;
                 }
+                String baseUrl = "";
+                if (clazz.isAnnotationPresent(RequestMapping.class)) {
+                    RequestMapping requestMapping = clazz.getAnnotation(RequestMapping.class);
+                    baseUrl = requestMapping.value();
+                }
+                //扫描所有的public方法
+                Method[] methods = clazz.getMethods();
+                for (Method method : methods) {
+                    if (!method.isAnnotationPresent(RequestMapping.class)) {
+                        continue;
+                    }
 
-                RequestMapping requestMapping = method.getAnnotation(RequestMapping.class);
-                String regex = ("/" + baseUrl + requestMapping.value().replaceAll("\\*", ".*")).replaceAll("/+", "/");
-                Pattern pattern = Pattern.compile(regex);
-                this.handlerMappings.add(new HandlerMapping(instance, method, pattern));
-                System.out.println("Mapping: " + regex + " , " + method);
+                    RequestMapping requestMapping = method.getAnnotation(RequestMapping.class);
+                    String regex = ("/" + baseUrl + requestMapping.value().replaceAll("\\*", ".*")).replaceAll("/+", "/");
+                    Pattern pattern = Pattern.compile(regex);
+                    this.handlerMappings.add(new HandlerMapping(controller, method, pattern));
+                    System.out.println("Mapping: " + regex + " , " + method);
+                }
 
             }
-
+        } catch (Exception e) {
+            e.printStackTrace();
         }
-
-
     }
 
     private void initLocaleResolver(ApplicationContext context) {
@@ -194,16 +196,16 @@ public class DispatchServlet extends HttpServlet {
 
     }
 
-    private void processDispatchResult(HttpServletResponse response, ModelAndView mv) throws Exception{
-        if (mv ==null) return;
-        if (this.viewResolvers.isEmpty())return;
-        for (ViewResolver viewResolver:
-             this.viewResolvers) {
+    private void processDispatchResult(HttpServletResponse response, ModelAndView mv) throws Exception {
+        if (mv == null) return;
+        if (this.viewResolvers.isEmpty()) return;
+        for (ViewResolver viewResolver :
+                this.viewResolvers) {
 
-            if (!mv.getViewName().equals(viewResolver.getName()))continue;
+            if (!mv.getViewName().equals(viewResolver.getName())) continue;
 
             String out = viewResolver.viewResolver(mv);
-            if (null !=out){
+            if (null != out) {
                 response.getWriter().write(out);
             }
 
@@ -212,7 +214,7 @@ public class DispatchServlet extends HttpServlet {
 
     //参数动态处理，类型转换
     private HandlerAdapter getHandlerAdapter(HandlerMapping handler) {
-        if (this.handlerAdapters.isEmpty())return null;
+        if (this.handlerAdapters.isEmpty()) return null;
         return handlerAdapters.get(handler);
     }
 
