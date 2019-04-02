@@ -24,6 +24,8 @@ public class MyServlet extends HttpServlet {
 
     @Override
     public void init(ServletConfig servletConfig) throws ServletException {
+        ServletContext servletContext = servletConfig.getServletContext();
+        servletContext.log("MyServlet init");
         super.init(servletConfig);
         value = servletConfig.getInitParameter("myname");
     }
@@ -32,7 +34,7 @@ public class MyServlet extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         Writer writer = response.getWriter();
         ServletContext servletContext = getServletContext();
-        servletContext.log("doGet .........");
+        servletContext.log("MyServlet doGet .........");
         writer.write("hello," + value);
 
     }
