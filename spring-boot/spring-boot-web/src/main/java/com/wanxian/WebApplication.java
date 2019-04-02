@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.ServletComponentScan;
 
 @SpringBootApplication
-@ServletComponentScan("com.wanxian.servlet")
+@ServletComponentScan(basePackages = "com.wanxian.servlet")
 public class WebApplication {
 
     public static void main(String[] args) {
