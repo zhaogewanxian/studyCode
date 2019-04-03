@@ -7,14 +7,14 @@ import javax.servlet.annotation.WebListener;
 import javax.servlet.http.HttpServletRequest;
 
 @WebListener
-public class MyServletListener implements ServletRequestListener {
+public class MyServletRequestListener implements ServletRequestListener {
 
 
     @Override
     public void requestDestroyed(ServletRequestEvent sre) {
         HttpServletRequest request = (HttpServletRequest) sre.getServletRequest();
         ServletContext servletContext = request.getServletContext();
-        servletContext.log("MyServletListener destroyed ..");
+        servletContext.log("MyServletRequestListener destroyed ..");
 
     }
 
@@ -22,7 +22,7 @@ public class MyServletListener implements ServletRequestListener {
     public void requestInitialized(ServletRequestEvent sre) {
         HttpServletRequest request = (HttpServletRequest) sre.getServletRequest();
         ServletContext servletContext = request.getServletContext();
-        servletContext.log("MyServletListener initialized ..");
+        servletContext.log("MyServletRequestListener initialized ..");
 
     }
 }
