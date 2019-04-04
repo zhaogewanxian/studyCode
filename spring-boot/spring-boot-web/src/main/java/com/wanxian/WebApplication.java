@@ -56,10 +56,10 @@ public class WebApplication extends SpringBootServletInitializer {
      * @return
      * @see ServerPropertiesAutoConfiguration
      * @see ServerProperties
-     * 容器类型 servlet类1.tomcat 2.jetty 非servlet 3.Undertow
+     * 容器类型 servlet 1.tomcat 2.jetty 非servlet 3.Undertow
      * 激活servlet步骤(默认不支持,->非servlet容器Undertow)
      * 1.继承SpringBootServletInitializer
-     * 2.configure
+     * 2.重写#configure()方法
      */
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
