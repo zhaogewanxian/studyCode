@@ -72,7 +72,7 @@ public class JdbcController {
                 ResultSet resultSet = statement.executeQuery("SELECT * FROM user");
                 List<String> columnNames = new ArrayList<>();
                 ResultSetMetaData resultSetMetaData = resultSet.getMetaData(); //结果集元数据
-                for (int i = 1; i < resultSetMetaData.getColumnCount(); i++) { //下标从1开始
+                for (int i = 1; i <= resultSetMetaData.getColumnCount(); i++) { //下标从1开始
                     columnNames.add(resultSetMetaData.getColumnName(i)); //拿到字段名称
                 }
                 while (resultSet.next()) {
@@ -80,7 +80,7 @@ public class JdbcController {
                     for (String columnName :
                             columnNames) {
                         Object columnValue = resultSet.getObject(columnName); //根据字段名称获取字段值
-                        map.put("columnName", columnValue);
+                        map.put(columnName, columnValue);
                     }
                     resultList.add(map);
                 }
