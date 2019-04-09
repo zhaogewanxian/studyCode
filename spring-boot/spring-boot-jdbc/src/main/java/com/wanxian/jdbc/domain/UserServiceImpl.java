@@ -6,8 +6,13 @@ import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.PreparedStatementCallback;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.PlatformTransactionManager;
+import org.springframework.transaction.TransactionDefinition;
+import org.springframework.transaction.TransactionStatus;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.transaction.support.AbstractPlatformTransactionManager;
+import org.springframework.transaction.support.DefaultTransactionDefinition;
 
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
@@ -18,6 +23,9 @@ public class UserServiceImpl implements UserService {
 
     @Autowired
     private JdbcTemplate jdbcTemplate; //xxxxTemplate必定实现xxxxOperations :RestTemplate->RestOperations
+    @Autowired
+    private PlatformTransactionManager platformTransactionManager;
+
 
     @Transactional
     @Override
@@ -33,6 +41,26 @@ public class UserServiceImpl implements UserService {
                 return preparedStatement.executeUpdate() > 0;
             }
         });
+        return result;
+    }
+
+    /**
+     * @param user
+     * @return
+     * @see AbstractPlatformTransactionManager
+     * @see PlatformTransactionManager
+     */
+    @Override
+    public boolean save2(User user) {
+        boolean result = false;
+        TransactionDefinition transactionDefinition = new DefaultTransactionDefinition();
+        TransactionStatus transactionStatus = platformTransactionManager.getTransaction(transactionDefinition);
+        try {
+            result = save(user);
+            platformTransactionManager.commit(transactionStatus);
+        } catch (Exception e) {
+            platformTransactionManager.rollback(transactionStatus);
+        }
         return result;
     }
 }
