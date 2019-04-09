@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>springboot-tomcat</artifactId>
+    <artifactId>spring-boot-tomcat</artifactId>
 
 
 </project>
