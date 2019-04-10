@@ -1,11 +1,12 @@
-package com.wanxian.applicaiton;
+package com.wanxian.applicaiton.spring;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 
 /**
- * @Component 的"派生性" (注解没有extends)
+ * spring 模式注解
+ * @Component 的"派生性" (注解没有extends)  @controller @service逻辑上区分，都是spring bean
  * @see Configuration
  * @see Component
  */
