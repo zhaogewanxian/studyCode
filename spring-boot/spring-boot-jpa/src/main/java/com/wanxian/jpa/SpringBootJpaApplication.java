@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
-@EnableJpaRepositories(basePackages = "com.wanxian.jpa")
+@EnableJpaRepositories(basePackages = "com.wanxian.jpa") //激活JPA repository
 public class SpringBootJpaApplication {
 
     public static void main(String[] args) {

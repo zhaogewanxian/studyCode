@@ -12,8 +12,8 @@ public class User {
     @GeneratedValue //默认为自动增长
     private Long id;
     private String name;
-//    @OneToOne(mappedBy = "user")
-//    private IdCard idCard;
+    @OneToOne(mappedBy = "user")
+    private IdCard idCard;
 
     public Long getId() {
         return id;
@@ -31,5 +31,11 @@ public class User {
         this.name = name;
     }
 
+    public IdCard getIdCard() {
+        return idCard;
+    }
 
+    public void setIdCard(IdCard idCard) {
+        this.idCard = idCard;
+    }
 }
