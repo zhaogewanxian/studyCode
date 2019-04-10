@@ -12,7 +12,7 @@ public class User {
     @GeneratedValue //默认为自动增长
     private Long id;
     private String name;
-    @OneToOne(mappedBy = "idCard")
+    @OneToOne(mappedBy = "user")
     private IdCard idCard;
 
     public Long getId() {
