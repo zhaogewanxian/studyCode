@@ -1,5 +1,7 @@
 package com.wanxian.jpa.entity;
 
+import com.wanxian.jpa.entity.listener.UserListener;
+
 import javax.persistence.*;
 
 /**
@@ -7,6 +9,7 @@ import javax.persistence.*;
  */
 @Entity
 @Table(name = "t_user")
+@EntityListeners(value = {UserListener.class})
 public class User {
     @Id //id
     @GeneratedValue //默认为自动增长
