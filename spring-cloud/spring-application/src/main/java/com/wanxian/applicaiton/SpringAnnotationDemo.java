@@ -6,6 +6,7 @@ import org.springframework.stereotype.Component;
 
 /**
  * @Component 的"派生性" (注解没有extends)
+ * @see Configuration
  * @see Component
  */
 @Configuration
