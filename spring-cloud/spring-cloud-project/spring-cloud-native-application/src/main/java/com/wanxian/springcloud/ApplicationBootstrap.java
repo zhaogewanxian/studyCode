@@ -22,7 +22,9 @@ public class ApplicationBootstrap {
         //在晚弦 注册一个helloWorld的bean
         annotationConfigApplicationContext.registerBean("helloWorld", String.class, "HelloWorld");
         annotationConfigApplicationContext.refresh();
-        new SpringApplicationBuilder(ApplicationBootstrap.class).parent(annotationConfigApplicationContext).run(args);
+        new SpringApplicationBuilder(ApplicationBootstrap.class)
+                .parent(annotationConfigApplicationContext) //显示设置双亲上下文
+                .run(args);
     }
 
     @Autowired

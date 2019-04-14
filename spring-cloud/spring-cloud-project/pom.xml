@@ -12,6 +12,8 @@
     <artifactId>spring-cloud-project</artifactId>
     <modules>
         <module>spring-cloud-native-application</module>
+        <module>spring-cloud-config-client</module>
+        <module>spring-cloud-config-server</module>
     </modules>
 
 
