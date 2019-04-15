@@ -25,14 +25,14 @@ public class SpringCloudConfigServer {
      * (bootstrap Application 或者 Application)Environment ->List<PropertySource>->PropertySource
      * @return
      */
-    @Bean
+//    @Bean
     public EnvironmentRepository environmentRepository() {
         return (String application, String profile, String label) -> {
             Environment environment = new Environment("default", profile);
             List<PropertySource> propertySourceList = environment.getPropertySources();
             Map<String, Object> map = new HashMap<>();
             map.put("name", "晚弦");
-            PropertySource propertySource = new PropertySource("value", map);
+            PropertySource propertySource = new PropertySource("myPropertySource", map);
             propertySourceList.add(propertySource);
             return environment;
         };
