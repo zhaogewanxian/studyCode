@@ -14,10 +14,8 @@ import org.springframework.web.client.RestTemplate;
  */
 @SpringBootApplication
 @EnableDiscoveryClient
-@EnableScheduling
-public class SpringCloudClientApplication {
+public class SpringCloudServerApplication {
     public static void main(String[] args) {
-        new SpringApplicationBuilder(SpringCloudClientApplication.class).web(WebApplicationType.SERVLET).run(args);
+        new SpringApplicationBuilder(SpringCloudServerApplication.class).web(WebApplicationType.SERVLET).run(args);
     }
-
 }
