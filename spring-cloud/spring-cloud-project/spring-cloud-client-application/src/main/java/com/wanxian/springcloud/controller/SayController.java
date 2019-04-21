@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
+import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -22,6 +23,11 @@ public class SayController {
 
     @Autowired
     private RestTemplate restTemplate;
+
+    @Autowired
+    @LoadBalanced
+    private RestTemplate lbRestTemplate;
+
     @Autowired
     private DiscoveryClient discoveryClient;
     @Value("${spring.application.name}")
@@ -57,11 +63,30 @@ public class SayController {
 //        oldServiceNames.clear();
 //    }
 
+    /**
+     * 自定义
+     * @param serviceName
+     * @param message
+     * @return
+     */
 
     @GetMapping("invoke/{serviceName}/say")
     public String invokeSay(@PathVariable String serviceName, @RequestParam String message) {
-        //在restTemplate 中进行算法处理
+        //在自定义 restTemplate 中进行算法处理
         return restTemplate.getForObject("/" + serviceName + "/say?message=" + message, String.class);
+    }
+
+    /**
+     * Ribbon RestTemplate
+     * @param serviceName
+     * @param message
+     * @return
+     */
+
+    @GetMapping("/lb/invoke/{serviceName}/say")
+    public String lbInvokeSay(@PathVariable String serviceName, @RequestParam String message) {
+        // Ribbon RestTemplate
+        return lbRestTemplate.getForObject("http://" + serviceName + "/say?message=" + message, String.class);
     }
 
 //    @GetMapping("invoke/say")
@@ -81,6 +106,11 @@ public class SayController {
     @Bean
     public LoadBalanceRequestInterceptor interceptor() {
         return new LoadBalanceRequestInterceptor();
+    }
+    @Bean
+    @LoadBalanced
+    public  RestTemplate loadBalanceRestTemplate(){
+        return  new RestTemplate();
     }
 
     @Bean
