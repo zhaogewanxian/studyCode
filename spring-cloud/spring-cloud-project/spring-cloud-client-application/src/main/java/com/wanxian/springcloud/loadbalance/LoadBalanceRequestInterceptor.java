@@ -1,20 +1,16 @@
 package com.wanxian.springcloud.loadbalance;
 
 import org.apache.commons.lang.StringUtils;
-import org.omg.PortableInterceptor.ClientRequestInterceptor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpRequest;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.http.client.ClientHttpRequestExecution;
 import org.springframework.http.client.ClientHttpRequestInterceptor;
 import org.springframework.http.client.ClientHttpResponse;
-import org.springframework.lang.Nullable;
 import org.springframework.scheduling.annotation.Scheduled;
-import org.springframework.web.client.RestTemplate;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -64,7 +60,7 @@ public class LoadBalanceRequestInterceptor implements ClientHttpRequestIntercept
         URLConnection urlConnection = url.openConnection();
         HttpHeaders headers = new HttpHeaders();
         InputStream inputStream = urlConnection.getInputStream();
-        return new SimpleClientHttpResponse(headers,inputStream);
+        return new SimpleClientHttpResponse(headers, inputStream);
     }
 
     private static class SimpleClientHttpResponse implements ClientHttpResponse {
