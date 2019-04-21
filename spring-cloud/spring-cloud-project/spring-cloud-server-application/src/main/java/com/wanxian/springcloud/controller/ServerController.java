@@ -88,6 +88,18 @@ public class ServerController {
         return result;
     }
 
+    /**
+     *高级版本版本
+     *
+     * @param message
+     * @return
+     * @throws Exception
+     */
+    @GetMapping("advance/say")
+    public String advanceSay(@RequestParam String message) throws Exception {
+        return doSay2(message);
+    }
+
     private String doSay2(String message) throws InterruptedException {
         int value = random.nextInt(200);
         //>100 返回超时内容
