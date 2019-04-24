@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>sprin-boot-webservices</artifactId>
+    <artifactId>spring-boot-webservices</artifactId>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
