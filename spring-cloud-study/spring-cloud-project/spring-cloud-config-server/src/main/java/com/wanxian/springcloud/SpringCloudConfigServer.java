@@ -6,6 +6,7 @@ import org.springframework.cloud.config.environment.Environment;
 import org.springframework.cloud.config.environment.PropertySource;
 import org.springframework.cloud.config.server.EnableConfigServer;
 import org.springframework.cloud.config.server.environment.EnvironmentRepository;
+import org.springframework.context.annotation.Bean;
 
 import java.util.HashMap;
 import java.util.List;
@@ -24,7 +25,7 @@ public class SpringCloudConfigServer {
      * (bootstrap Application 或者 Application)Environment ->List<PropertySource>->PropertySource
      * @return
      */
-//    @Bean
+    @Bean
     public EnvironmentRepository environmentRepository() {
         return (String application, String profile, String label) -> {
             Environment environment = new Environment("default", profile);
