@@ -1,14 +1,13 @@
 package com.wanxian.springcloud.controller;
 
 import com.wanxian.springcloud.loadbalance.LoadBalanceRequestInterceptor;
+import com.wanxian.springcloud.service.feign.client.SayingService;
+import com.wanxian.springcloud.service.SayingRestService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.web.client.RestTemplateBuilder;
-import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
-import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -16,7 +15,6 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
 @RestController
 public class SayController {
@@ -33,6 +31,14 @@ public class SayController {
     @Value("${spring.application.name}")
     private String currentServices;
     private volatile Set<String> serviceNames = new HashSet<>();
+
+    @Autowired
+    private SayingRestService sayingRestService;
+
+    @Autowired
+    private SayingService sayingService;
+
+
 
 //    private volatile Map<String, Set<String>> targetUrlsCache = new HashMap<>();
 //
@@ -65,6 +71,7 @@ public class SayController {
 
     /**
      * 自定义
+     *
      * @param serviceName
      * @param message
      * @return
@@ -78,6 +85,7 @@ public class SayController {
 
     /**
      * Ribbon RestTemplate
+     *
      * @param serviceName
      * @param message
      * @return
@@ -87,6 +95,30 @@ public class SayController {
     public String lbInvokeSay(@PathVariable String serviceName, @RequestParam String message) {
         // Ribbon RestTemplate
         return lbRestTemplate.getForObject("http://" + serviceName + "/say?message=" + message, String.class);
+    }
+
+    /**
+     * feign
+     *
+     * @param message
+     * @return
+     */
+
+    @GetMapping("/feign/say")
+    public String saying(@RequestParam String message) {
+        return sayingService.saying(message);
+    }
+
+    /**
+     * feign
+     *
+     * @param message
+     * @return
+     */
+
+    @GetMapping("/rest/say")
+    public String restSaying(@RequestParam String message) {
+        return sayingRestService.saying(message);
     }
 
 //    @GetMapping("invoke/say")
@@ -107,10 +139,11 @@ public class SayController {
     public LoadBalanceRequestInterceptor interceptor() {
         return new LoadBalanceRequestInterceptor();
     }
+
     @Bean
     @LoadBalanced
-    public  RestTemplate loadBalanceRestTemplate(){
-        return  new RestTemplate();
+    public RestTemplate loadBalanceRestTemplate() {
+        return new RestTemplate();
     }
 
     @Bean
