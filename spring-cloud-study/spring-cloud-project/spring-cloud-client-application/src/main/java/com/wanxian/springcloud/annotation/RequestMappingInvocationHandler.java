@@ -30,6 +30,7 @@ public class RequestMappingInvocationHandler implements InvocationHandler {
         if (requestMapping != null) {
             //得到requestMapping中的值
             String[] uri = requestMapping.value();
+            //RestTemplate完整路径：http://${serviceName}/url?param1=value1&param2=value2
             StringBuilder urlBuilder = new StringBuilder("http://").append(serviceName).append("/").append(uri[0]);
             //获取方法参数的顺序
             int count = method.getParameterCount();
@@ -38,7 +39,7 @@ public class RequestMappingInvocationHandler implements InvocationHandler {
             //方法参数类型集合
             Class<?>[] paramterTypes = method.getParameterTypes();
             //方法注解集合
-            Annotation[][] annotations = method.getParameterAnnotations();
+            Annotation[][] annotations = method.getParameterAnnotations();//二维数组参数
             StringBuilder queryString = new StringBuilder();
             for (int i = 0; i < count; i++) {
                 Class<?> paramterType = paramterTypes[i];
@@ -56,7 +57,7 @@ public class RequestMappingInvocationHandler implements InvocationHandler {
                 }
             }
 
-            if (StringUtils.hasText(queryString)) {
+            if (StringUtils.hasText(queryString)) { //参数不为空
                 urlBuilder.append("?").append(queryString).toString();
             }
             String urlQuery = urlBuilder.toString();
