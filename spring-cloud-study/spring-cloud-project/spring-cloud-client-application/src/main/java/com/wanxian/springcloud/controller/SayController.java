@@ -4,6 +4,7 @@ import com.wanxian.springcloud.loadbalance.LoadBalanceRequestInterceptor;
 import com.wanxian.springcloud.service.feign.client.SayingService;
 import com.wanxian.springcloud.service.SayingRestService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
@@ -33,6 +34,7 @@ public class SayController {
     private volatile Set<String> serviceNames = new HashSet<>();
 
     @Autowired
+    @Qualifier("SayingRestService")
     private SayingRestService sayingRestService;
 
     @Autowired
