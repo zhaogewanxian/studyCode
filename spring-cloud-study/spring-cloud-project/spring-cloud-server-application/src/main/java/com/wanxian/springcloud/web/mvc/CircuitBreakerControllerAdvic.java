@@ -7,6 +7,10 @@ import java.io.IOException;
 import java.io.Writer;
 import java.util.concurrent.TimeoutException;
 
+/**
+ * @see RestControllerAdvice
+ * @see ExceptionHandler
+ */
 @RestControllerAdvice
 public class CircuitBreakerControllerAdvic {
 

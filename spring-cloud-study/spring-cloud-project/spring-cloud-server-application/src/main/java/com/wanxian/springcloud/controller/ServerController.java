@@ -3,6 +3,8 @@ package com.wanxian.springcloud.controller;
 
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixProperty;
+import com.wanxian.springcloud.web.mvc.CircuitBreakerControllerAdvic;
+import com.wanxian.springcloud.web.mvc.CircuitBreakerInterceptor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -67,11 +69,12 @@ public class ServerController {
     }
 
     /**
-     * 中级版本
+     * 中级版本(1.拦截器，判断方法名称和异常类型，返回熔断内容2.全局异常统一处理)
      *
      * @param message
      * @return
      * @throws Exception
+     * @see CircuitBreakerInterceptor
      */
     @GetMapping("middle/say")
     public String middleSay(@RequestParam String message) throws Exception {
@@ -89,11 +92,13 @@ public class ServerController {
     }
 
     /**
-     *高级版本版本
+     * 高级版本
+
      *
      * @param message
      * @return
      * @throws Exception
+     * @see CircuitBreakerControllerAdvic
      */
     @GetMapping("advance/say")
     public String advanceSay(@RequestParam String message) throws Exception {
