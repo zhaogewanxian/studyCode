@@ -34,7 +34,6 @@ public class SayController {
     private volatile Set<String> serviceNames = new HashSet<>();
 
     @Autowired
-    @Qualifier("SayingRestService")
     private SayingRestService sayingRestService;
 
     @Autowired
