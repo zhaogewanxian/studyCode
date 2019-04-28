@@ -4,7 +4,9 @@ import com.wanxian.domain.Person;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.EnvironmentAware;
+import org.springframework.core.convert.converter.Converter;
 import org.springframework.core.env.Environment;
+import org.springframework.core.env.PropertyResolver;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -20,10 +22,14 @@ public class PersonController implements EnvironmentAware {
     private Person person;
     /**
      * 2.注解 annotation
+     * //存在返回，不存在返回默认值
+     * @see Converter
+     * @see PropertyResolver
+     * 类型如何转换 String->Integer
      */
     @Value("${person.id:6}")
     private Long id;
-    @Value("${person.name:wanxian1}") //存在返回，不存在返回默认值
+    @Value("${person.name:wanxian1}")
     private String name;
 
     private Integer age;
