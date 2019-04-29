@@ -13,6 +13,7 @@
         <module>spring-boot-webservices</module>
         <module>spring-boot-security</module>
         <module>spring-boot-environment</module>
+        <module>spring-boot-starter</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

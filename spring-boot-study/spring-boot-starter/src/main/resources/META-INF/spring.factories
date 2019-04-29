@@ -1,0 +1,3 @@
+#jar包方式分发
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.wanxian.starter.configuration.PersonAutoConfiguration
