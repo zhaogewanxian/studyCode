@@ -17,6 +17,7 @@
         <module>spring-cloud-service-discovery-client</module>
         <module>spring-cloud-client-application</module>
         <module>spring-cloud-server-application</module>
+        <module>spring-cloud-zuul</module>
     </modules>
 
 
