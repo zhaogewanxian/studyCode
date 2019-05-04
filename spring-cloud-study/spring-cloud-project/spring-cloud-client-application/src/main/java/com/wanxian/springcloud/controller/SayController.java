@@ -33,8 +33,8 @@ public class SayController {
     private String currentServices;
     private volatile Set<String> serviceNames = new HashSet<>();
 
-    @Autowired
-    private SayingRestService sayingRestService;
+//    @Autowired
+//    private SayingRestService sayingRestService;
 
     @Autowired
     private SayingService sayingService;
@@ -116,11 +116,11 @@ public class SayController {
      * @param message
      * @return
      */
-
-    @GetMapping("/rest/say")
-    public String restSaying(@RequestParam String message) {
-        return sayingRestService.saying(message);
-    }
+//
+//    @GetMapping("/rest/say")
+//    public String restSaying(@RequestParam String message) {
+//        return sayingRestService.saying(message);
+//    }
 
 //    @GetMapping("invoke/say")
 //    public String invokeSay(@RequestParam String message) {

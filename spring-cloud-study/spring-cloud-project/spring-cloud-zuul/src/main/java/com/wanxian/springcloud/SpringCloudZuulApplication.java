@@ -2,10 +2,12 @@ package com.wanxian.springcloud;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 
 @SpringBootApplication
-@EnableZuulProxy
+@EnableZuulProxy //激活zuul
+@EnableDiscoveryClient//激活服务发现
 public class SpringCloudZuulApplication {
 
     public static void main(String[] args) {
