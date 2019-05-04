@@ -106,7 +106,7 @@ public class SayController {
      */
 
     @GetMapping("/feign/say")
-    public String saying(@RequestParam String message) {
+    public String saying(@RequestParam("message") String message) {
         return sayingService.saying(message);
     }
 
