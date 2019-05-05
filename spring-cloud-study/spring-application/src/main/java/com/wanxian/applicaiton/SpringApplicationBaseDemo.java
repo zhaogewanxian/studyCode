@@ -18,7 +18,7 @@ public class SpringApplicationBaseDemo {
         Map<String, Object> map = new LinkedHashMap<>();
         map.put("server.port", 0);
         //设置为非web应用,运行之后直接停止
-        springApplication.setWebApplicationType(WebApplicationType.NONE);
+        springApplication.setWebApplicationType(WebApplicationType.NONE); //spring boot 2.0.0
         springApplication.setDefaultProperties(map);
         springApplication.run(args);
 
