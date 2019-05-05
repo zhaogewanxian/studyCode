@@ -12,6 +12,7 @@ public @interface EnableRestClient {
 
     /**
      * 指定 @RestClient 接口
+     *
      * @return
      */
     Class<?>[] clients() default {};

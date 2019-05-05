@@ -12,6 +12,7 @@ public @interface RestClient {
 
     /**
      * REST 服务应用名称
+     *
      * @return
      */
     String name();

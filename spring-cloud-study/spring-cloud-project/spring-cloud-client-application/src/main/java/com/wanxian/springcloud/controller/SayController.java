@@ -40,7 +40,6 @@ public class SayController {
     private SayingService sayingService;
 
 
-
 //    private volatile Map<String, Set<String>> targetUrlsCache = new HashMap<>();
 //
 //    @Scheduled(fixedDelay = 10 * 1000)
@@ -135,7 +134,6 @@ public class SayController {
 //    public String say(@RequestParam String message) {
 //        return "Hello," + message;
 //    }
-
     @Bean
     public LoadBalanceRequestInterceptor interceptor() {
         return new LoadBalanceRequestInterceptor();

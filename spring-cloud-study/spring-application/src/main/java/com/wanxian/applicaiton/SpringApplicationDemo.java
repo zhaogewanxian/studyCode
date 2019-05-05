@@ -6,11 +6,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 
 /**
- *SpringBootApplication
- *  SpringBootConfiguration
- *      Configuration
- *          component
- *派生性
+ * SpringBootApplication
+ * SpringBootConfiguration
+ * Configuration
+ * component
+ * 派生性
  */
 @SpringBootApplication
 public class SpringApplicationDemo {

@@ -45,7 +45,7 @@ public class RequestMappingInvocationHandler implements InvocationHandler {
                 Class<?> paramterType = paramterTypes[i];
                 Annotation[] paramAnnotations = annotations[i];
 
-                RequestParam requestParam =(RequestParam) paramAnnotations[0];
+                RequestParam requestParam = (RequestParam) paramAnnotations[0];
                 if (requestParam != null) {
                     String paramName = paramNames[i];
                     //当声明@RequestParam 以@RequestParam为主，否则

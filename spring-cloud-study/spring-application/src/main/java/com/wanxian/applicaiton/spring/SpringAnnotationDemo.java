@@ -6,6 +6,7 @@ import org.springframework.stereotype.Component;
 
 /**
  * spring 模式注解
+ *
  * @Component 的"派生性" (注解没有extends)  @controller @service逻辑上区分，都是spring bean
  * @see Configuration
  * @see Component

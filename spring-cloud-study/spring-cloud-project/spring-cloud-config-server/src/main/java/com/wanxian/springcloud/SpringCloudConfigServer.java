@@ -25,6 +25,7 @@ public class SpringCloudConfigServer {
      * {@link EnvironmentRepository}
      * 自定义实现(当spring上下文出现 EnvironmentRepository bean时,DefaultRepositoryConfiguration 默认将会失效)
      * (bootstrap Application 或者 Application)Environment ->List<PropertySource>->PropertySource
+     *
      * @return
      */
     //@Bean

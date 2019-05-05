@@ -13,4 +13,9 @@ public class KafkaConsumerListener {
     public void kafkaConsumerListener(String message) {
         System.out.println("接收到消息:" + message);
     }
+
+    @KafkaListener(topics = "test")
+    public void kafkaConsumerListenerByWanxian(String message) {
+        System.out.println("接收到消息:" + message);
+    }
 }
