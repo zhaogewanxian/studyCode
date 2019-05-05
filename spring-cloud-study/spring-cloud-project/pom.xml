@@ -19,6 +19,7 @@
         <module>spring-cloud-server-application</module>
         <module>spring-cloud-zuul</module>
         <module>spring-cloud-servlet-gateway</module>
+        <module>spring-cloud-stream-kafka</module>
     </modules>
 
 
