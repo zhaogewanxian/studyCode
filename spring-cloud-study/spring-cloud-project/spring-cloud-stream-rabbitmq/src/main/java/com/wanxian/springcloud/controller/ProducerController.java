@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * kafka生产者控制器
+ * 生产者控制器
  */
 @RestController
 public class ProducerController {
