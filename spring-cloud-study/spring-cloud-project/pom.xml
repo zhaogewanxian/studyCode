@@ -20,6 +20,7 @@
         <module>spring-cloud-zuul</module>
         <module>spring-cloud-servlet-gateway</module>
         <module>spring-cloud-stream-kafka</module>
+        <module>spring-cloud-stream-rabbitmq</module>
     </modules>
 
 
