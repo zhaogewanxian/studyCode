@@ -7,5 +7,5 @@ import org.springframework.web.bind.annotation.RequestParam;
 @FeignClient(name = "spring-cloud-server-application")
 public interface SayingService {
     @RequestMapping("say")
-    String saying(@RequestParam String message);
+    String saying(@RequestParam("message") String message);
 }

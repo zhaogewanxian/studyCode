@@ -49,7 +49,7 @@ public class ConsumerBean {
      * @param message
      */
     @ServiceActivator(inputChannel = Sink.INPUT)
-    public void message(Object message) {
+    public void messageByServiceActivator(Object message) {
         System.out.println("@ServiceActivator:" + message);
     }
 
@@ -59,7 +59,7 @@ public class ConsumerBean {
      * @param message
      */
     @StreamListener(Sink.INPUT)
-    public void kafkaConsumerListener(String message) {
+    public void messageByStreamListener(String message) {
         System.out.println("@StreamListener:" + message);
     }
 
