@@ -21,6 +21,7 @@
         <module>spring-cloud-servlet-gateway</module>
         <module>spring-cloud-stream-kafka</module>
         <module>spring-cloud-stream-rabbitmq</module>
+        <module>spring-cloud-eureka</module>
     </modules>
 
 
