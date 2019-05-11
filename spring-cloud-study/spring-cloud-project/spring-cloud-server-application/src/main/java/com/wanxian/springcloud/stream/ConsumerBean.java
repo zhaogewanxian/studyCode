@@ -35,9 +35,9 @@ public class ConsumerBean {
             public void handleMessage(Message<?> message) throws MessagingException {
                 MessageHeaders messageHeaders = message.getHeaders();
                 String encoding = (String) messageHeaders.get("charset-encoding");
-                byte[] content=(byte[]) message.getPayload();
+                byte[] content = (byte[]) message.getPayload();
                 try {
-                    System.out.println("@PostConstruct:" + new String(content,encoding));
+                    System.out.println("@PostConstruct:" + new String(content, encoding));
                 } catch (UnsupportedEncodingException e) {
                     e.printStackTrace();
                 }

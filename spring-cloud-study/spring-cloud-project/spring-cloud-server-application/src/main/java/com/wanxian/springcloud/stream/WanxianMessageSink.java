@@ -7,6 +7,7 @@ import org.springframework.messaging.SubscribableChannel;
 
 /**
  * 自定义实现
+ *
  * @see Sink
  */
 public interface WanxianMessageSink {

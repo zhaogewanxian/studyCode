@@ -29,7 +29,7 @@ public class SpringAnnotationDrivenEvent {
         }
     }
 
-//    @EventListener
+    //    @EventListener
 //    public void onMessage(MyApplicationEvent event) {
 //        System.err.println("监听到事件:" + event);
 //    }
