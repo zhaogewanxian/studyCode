@@ -1,5 +1,6 @@
 package com.wanxian.springcloud;
 
+import com.wanxian.springcloud.event.HttpRemoteAppEventListener;
 import com.wanxian.springcloud.service.feign.client.SayingService;
 import com.wanxian.springcloud.stream.WanxianMessageSource;
 import org.springframework.boot.WebApplicationType;
@@ -21,7 +22,8 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @EnableBinding(WanxianMessageSource.class) //激活并引入message
 public class SpringCloudClientApplication {
     public static void main(String[] args) {
-        new SpringApplicationBuilder(SpringCloudClientApplication.class).web(WebApplicationType.SERVLET).run(args);
+        new SpringApplicationBuilder(SpringCloudClientApplication.class)
+                .web(WebApplicationType.SERVLET).listeners(new HttpRemoteAppEventListener()).run(args);
     }
 
 }
