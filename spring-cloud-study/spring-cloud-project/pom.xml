@@ -22,6 +22,7 @@
         <module>spring-cloud-stream-kafka</module>
         <module>spring-cloud-stream-rabbitmq</module>
         <module>spring-cloud-eureka</module>
+        <module>spring-cloud-stream-rocketmq</module>
     </modules>
 
 
