@@ -23,6 +23,8 @@
         <module>spring-cloud-stream-rabbitmq</module>
         <module>spring-cloud-eureka</module>
         <module>spring-cloud-stream-rocketmq</module>
+        <module>spring-cloud-sleuth</module>
+        <module>spring-cloud-zipkin-server</module>
     </modules>
 
 
