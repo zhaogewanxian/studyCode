@@ -1,8 +1,8 @@
 package com.wanxian.rmi.rpc;
 
-public class TestServiceImpl implements TestService{
+public class TestServiceImpl implements TestService {
     @Override
-    public String say(String msg) {
-        return "hello,"+msg;
+    public String sayHello(String msg) {
+        return "hello," + msg;
     }
 }
