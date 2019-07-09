@@ -12,9 +12,16 @@
     <artifactId>dubbo-sentinel-samples</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>dubbo-sentinel-samples-consumer</module>
+        <module>dubbo-consumer</module>
         <module>dubbo-provider</module>
     </modules>
-
+    <dependencies>
+        <!-- replace here with the latest version -->
+        <dependency>
+            <groupId>com.alibaba.csp</groupId>
+            <artifactId>sentinel-core</artifactId>
+            <version>1.6.1</version>
+        </dependency>
+    </dependencies>
 
 </project>

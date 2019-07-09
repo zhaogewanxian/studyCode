@@ -11,5 +11,12 @@
 
     <artifactId>dubbo-consumer</artifactId>
 
-
+    <dependencies>
+        <!-- replace here with the latest version -->
+        <dependency>
+            <groupId>com.alibaba.csp</groupId>
+            <artifactId>sentinel-core</artifactId>
+            <version>1.6.1</version>
+        </dependency>
+    </dependencies>
 </project>
