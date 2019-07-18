@@ -1,0 +1,6 @@
+# ApplicationContextInitializer
+org.springframework.context.ApplicationContextInitializer=\
+com.wanxian.springboot.content.AfterApplicationContextInitializer,\
+com.wanxian.springboot.content.HelloWorldApplicationContextInitializer
+
+ 
