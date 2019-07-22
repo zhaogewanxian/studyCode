@@ -8,7 +8,7 @@ public class AfterApplicationContextInitializer<C extends ConfigurableApplicatio
         implements ApplicationContextInitializer<C>, Ordered {
     @Override
     public void initialize(C c) {
-
+        System.out.println("AfterApplicationContextInitializer :" + c.getId());
     }
 
     @Override

@@ -2,5 +2,8 @@
 org.springframework.context.ApplicationContextInitializer=\
 com.wanxian.springboot.content.AfterApplicationContextInitializer,\
 com.wanxian.springboot.content.HelloWorldApplicationContextInitializer
+# Application Listeners
+org.springframework.context.ApplicationListener=com.wanxian.springboot.listener.AfterApplicationListener,\
+com.wanxian.springboot.listener.HellWorldApplicationListener
 
  
